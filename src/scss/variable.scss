@@ -1,0 +1,4 @@
+// z-index를 쓰는 컴포넌트 요소들이  많아지면 z-index를 관리하기가 힘들어짐
+// 변수로 관리하여 쉽게 관리할 수 있도록 함
+$dimmed-zindex: 1000;
+$modal-zindex: 1001;

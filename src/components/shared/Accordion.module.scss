@@ -1,0 +1,36 @@
+.wrap-accordion {
+  margin-bottom: 12px;
+  .wrap-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: var(--beige);
+    border-radius: 6px;
+    cursor: pointer;
+
+    .arrow-down-icon {
+      width: 20px;
+      height: 20px;
+
+      //   transform: rotate(-180deg);
+    }
+  }
+
+  .wrap-content {
+    display: none;
+  }
+}
+
+// wrap-accordion 클래스가 open 클래스를 가지고 있으면 스타일 적용
+.wrap-accordion.open {
+  .wrap-header {
+    .arrow-down-icon {
+      transform: rotate(-180deg);
+    }
+  }
+
+  .wrap-content {
+    display: block;
+  }
+}

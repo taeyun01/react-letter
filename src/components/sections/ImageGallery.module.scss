@@ -1,0 +1,27 @@
+.wrap-images {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 6px;
+
+  .wrap-image {
+    width: 100%;
+    position: relative;
+    cursor: pointer;
+
+    // 가상선택자로 이런식으로 설정해줘야 이미지가 나타남
+    &::after {
+      display: block;
+      content: '';
+      padding-bottom: 100%; // 1:1 비율을 가지기 위함
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      left: 0;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+  }
+}

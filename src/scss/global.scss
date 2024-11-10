@@ -1,0 +1,49 @@
+@charset "utf-8"; //   UTF-8 인코딩을 선언하여 한글과 특수문자를 올바르게 표시 (이 선언은 스타일시트의 맨 앞에 위치해야 함
+// @import './font.scss'; // sass에서 더 이상 권장되지 않아 @use 사용
+@use './reset.scss';
+@use './font.scss';
+
+:root {
+  --red: #ea7664;
+  --black: #544f4f;
+  --black-light: #706c6c;
+  --brown: #89757a;
+  --beige: #f6f5f5;
+  --beige-dark: #e5e3e3;
+}
+
+body {
+  font-family: 'NanumBanJjagBanJjagByeor';
+  font-size: 22px;
+}
+
+button {
+  border: none;
+  margin: 0;
+  padding: 0;
+  width: auto;
+  overflow: visible;
+
+  background: transparent;
+
+  font-family: inherit;
+
+  /* inherit font & color from ancestor */
+  color: inherit;
+  font: inherit;
+
+  /* Normalize `line-height`. Cannot be changed from `normal` in Firefox 4+. */
+  line-height: normal;
+
+  /* Corrects font smoothing for webkit */
+  -webkit-font-smoothing: inherit;
+  -moz-osx-font-smoothing: inherit;
+
+  /* Corrects inability to style clickable `input` types in iOS */
+  -webkit-appearance: none;
+}
+
+a {
+  text-decoration: none;
+  color: var(--black);
+}

@@ -1,0 +1,16 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-weight: bold;
+}
+
+.date {
+  font-size: 30px;
+  margin-bottom: 8px;
+  z-index: 1;
+}
+
+.day {
+  z-index: 1;
+}

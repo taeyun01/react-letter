@@ -1,0 +1,47 @@
+@use '../../scss/utils.scss' as *;
+
+.container {
+  @include text-content;
+
+  .wrap-persons {
+    font-size: 22px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+    letter-spacing: 1.4px;
+    margin: 42px 0 8px; // 위 아래 마진을 42px와 8px로 설정
+
+    span {
+      z-index: 1;
+    }
+
+    .heart-icon {
+      fill: var(--red);
+      width: 20px;
+      height: 20px;
+      z-index: 1;
+    }
+  }
+}
+.flower-icon {
+  width: 34px;
+  height: 34px;
+  margin: 60px 0 12px;
+  z-index: 1;
+}
+
+.wrap-location {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 40px;
+}
+
+.wrap-location span {
+  z-index: 1;
+}
+
+.message-text {
+  margin: 200px 0;
+}

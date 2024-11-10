@@ -1,0 +1,18 @@
+@use '../../scss/utils.scss' as *;
+
+.container {
+  @include text-content;
+  .message-icon {
+    width: 28px;
+    height: 28px;
+    margin: 60px 0 12px;
+  }
+}
+
+.message-icon {
+  z-index: 1;
+}
+
+.container div > text {
+  z-index: 1;
+}

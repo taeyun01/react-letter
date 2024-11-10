@@ -1,0 +1,17 @@
+// EOT -> TTF/OTF -> WOFF -> WOFF2 순으로 용량이 작다. (브라우저마다 지원범위도 다르니 참고) woff2 지원 안하면 woff 사용 woff도 지원 안하면 ttf 사용. 이 순서로 하면 브라우저 호환성 문제 해결 가능
+@font-face {
+  font-family: 'NanumBanJjagBanJjagByeor';
+  src:
+    url('../assets/fonts/NanumBanJjagBanJjagByeor.woff2') format('woff2'),
+    url('../assets/fonts/NanumBanJjagBanJjagByeor.woff') format('woff'),
+    url('../assets/fonts/NanumBanJjagBanJjagByeor.ttf') format('truetype');
+  // font-display: swap; // 폰트를 다운받기 전엔 기본 폰트 노출 후 폰트 다운 완료 후 폰트 적용
+  // font-display: block; // 3초내에 폰트를 다운 받지 못하면 기본 폰트를 노출
+  font-display: fallback; // 0.1초 정도 block 발생. 3초내에 폰트를 다운 받지 못하면 다운로드 여부와 상관없이 기본 폰트를 노출
+}
+
+// ABCDEFGHIJKLMNOPQRSTUVWXYZ
+// 0123456789
+// abcdefghijklmnopqrstuvwxyz
+// !@#$%^&*()_+-=[]{}|;':",./<>?
+// ~

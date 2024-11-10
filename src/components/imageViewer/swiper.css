@@ -1,0 +1,19 @@
+/* 외부 라이브러리 스타일을 바꾸려면 따로 파일을 만들어서 작성
+   같은 스코프 안에서 스타일을 바꾸려고 하면 같은 클래스라는 걸 인식못할 수 있음
+*/
+
+.swiper,
+.swiper-wrapper {
+  height: 100% !important;
+}
+
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.swiper-slide > img {
+  width: 100%;
+}

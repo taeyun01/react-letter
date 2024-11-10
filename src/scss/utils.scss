@@ -1,0 +1,6 @@
+// 공통 스타일이나 아니면 공통 함수 같은 들은 util로 빼서 관리
+
+@mixin text-content {
+  text-align: center;
+  line-height: 24px;
+}
